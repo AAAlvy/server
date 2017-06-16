@@ -8,7 +8,7 @@ exports.up = function(knex, Promise) {
     table.text('style');
     table.float('abv');
     table.float('rating');
-    table.integer('user_id').references('user.id').unsigned().onDelete('cascade');
+    table.integer('drinker_id').references('drinker.id').unsigned().onDelete('cascade');
 });
 };
 
